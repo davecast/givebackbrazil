@@ -1,0 +1,53 @@
+/*
+* EVENT CALENDAR
+*/
+.events_calendar {
+  padding: 4.5rem 0;
+  z-index: 9;
+  position: relative;
+  min-height: calc(100vh - 222px);
+}
+
+.events_calendar #ep_single_event_detail_page_content .ep-main-container {
+  display: grid;
+  grid-template: 1fr / 1fr 1fr;
+  gap: 2rem;
+}
+.events_calendar
+  #ep_single_event_detail_page_content
+  .ep-main-container
+  #event-our-1 {
+  order: 2;
+}
+.events_calendar
+  #ep_single_event_detail_page_content
+  .ep-main-container
+  #event-our-4 {
+}
+
+#ep_event_calendar.fc
+  .fc-toolbar.fc-header-toolbar
+  .fc-toolbar-chunk:last-child
+  .fc-button-group
+  .fc-button-primary.fc-button-active,
+#ep_event_calendar a.fc-event,
+#ep_event_calendar .fc-event {
+  background-color: var(--primary) !important;
+}
+.fc .fc-daygrid-day.fc-day-today {
+  background-color: #ebe8e8 !important;
+}
+.fc .fc-toolbar-title {
+  font-family: "Poppins";
+  font-style: italic;
+  font-size: 1.5rem !important;
+  font-weight: 600;
+  color: var(--primary-dark);
+}
+
+@media screen and (max-width: 768px) {
+  .events_calendar #ep_single_event_detail_page_content .ep-main-container {
+    grid-template: 1fr / 1fr;
+    gap: 2rem;
+  }
+}

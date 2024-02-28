@@ -1,0 +1,327 @@
+@font-face {
+  font-family: "Poppins";
+  src: url("../webfonts/Poppins-BoldItalic.woff2") format("woff2"),
+    url("../webfonts/Poppins-BoldItalic.woff") format("woff");
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("../webfonts/Poppins-SemiBoldItalic.woff2") format("woff2"),
+    url("../webfonts/Poppins-SemiBoldItalic.woff") format("woff");
+  font-weight: 600;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("../webfonts/Poppins-Light.woff2") format("woff2"),
+    url("../webfonts/Poppins-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("../webfonts/Poppins-LightItalic.woff2") format("woff2"),
+    url("../webfonts/Poppins-LightItalic.woff") format("woff");
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("../webfonts/Poppins-Italic.woff2") format("woff2"),
+    url("../webfonts/Poppins-Italic.woff") format("woff");
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+
+:root {
+  --primary: #008b34;
+  --primary-dark: #00230d;
+  --primary-dark-b: #004800;
+  --primary-dark-c: #007eb6;
+  --primary-b: #0078ad;
+  --primary-c: #07c8f9;
+  --primary-d: #c9ecff;
+  --primary-e: #c6e9fc;
+  --secondary: #ffb800;
+  --secondary-dark: #ffa200;
+  --thirty: #002776;
+  --gray: #ededed;
+  --white: #ffffff;
+  --white-b: #eaeaea;
+  --white-c: #f3f2f2;
+  --white-d: #e6e6e6;
+  --black: #000000;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins";
+  margin: 0;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+}
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+figure {
+  margin: 0;
+  font-size: 0;
+}
+ul {
+  padding: 0;
+  margin: 0;
+}
+li {
+  list-style: none;
+}
+main {
+  padding: 82px 0 0;
+}
+.btn {
+  font-style: italic;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.15s ease-in-out;
+}
+.btn.btn-blue {
+  color: var(--white);
+  background-color: var(--primary);
+}
+.btn.btn-blue:hover {
+  background-color: var(--primary-dark);
+}
+.btn.btn-yellow {
+  color: var(--thirty);
+  background-color: var(--secondary);
+}
+.btn.btn-yellow:hover {
+  background-color: var(--secondary-dark);
+}
+.btn-small {
+  line-height: 0.875rem;
+  font-size: 0.875rem;
+  padding: 0.75rem 2rem;
+  border-radius: 2rem;
+}
+.btn-medium {
+  line-height: 1.75rem;
+  font-size: 1.75rem;
+  padding: 0.75rem 2rem;
+  border-radius: 2rem;
+}
+.btn-shadow {
+  -webkit-box-shadow: 0px 8px 8px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 8px 8px 0px rgba(0, 0, 0, 0.2);
+}
+.btn-shadow:active {
+  transform: translateY(2px);
+  -webkit-box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.2);
+}
+.m-b1 {
+  margin: 0 0 0.5rem;
+}
+.m-b2 {
+  margin: 0 0 1rem;
+}
+.m-b3 {
+  margin: 0 0 1.5rem;
+}
+.m-b4 {
+  margin: 0 0 2rem;
+}
+.m-b5 {
+  margin: 0 0 2.5rem;
+}
+.m-b6 {
+  margin: 0 0 3rem;
+}
+.m-b7 {
+  margin: 0 0 3.5rem;
+}
+.m-b8 {
+  margin: 0 0 4rem;
+}
+.t-center {
+  text-align: center;
+}
+.t-primary {
+  color: var(--primary);
+}
+.title {
+  text-transform: uppercase;
+  font-style: italic;
+  font-weight: normal;
+}
+.title-h2 {
+  font-size: 2.5rem;
+  line-height: 2.5rem;
+}
+.title-h4 {
+  font-size: 2.5rem;
+  line-height: 2.5rem;
+}
+
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.separator {
+  height: 0.75rem;
+  width: 100%;
+  background-color: var(--white);
+}
+.separator-shadow {
+  position: relative;
+  box-shadow: 3px 7px 12px 5px rgba(0, 0, 0, 0.05);
+  z-index: 9;
+}
+.separator-shadow-both {
+  box-shadow: 0 0 12px 5px rgba(0, 0, 0, 0.05);
+}
+.video_box {
+  width: 100%;
+  padding-top: 56.25%;
+  border: 12px solid #009fe5;
+  border-radius: 45px;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 3px 7px 12px 5px rgba(0, 0, 0, 0.11);
+}
+.video_box iframe {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+.splide__slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.splide .splide__arrow {
+  background-color: transparent;
+}
+.splide .splide__arrow.splide__arrow--prev {
+  left: -2rem;
+}
+.splide .splide__arrow.splide__arrow--next {
+  right: -2rem;
+}
+.splide__arrow img {
+  max-width: 32px;
+  max-height: 32px;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 100;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.4);
+}
+.modal-show {
+  display: block;
+}
+.modal-content {
+  position: relative;
+  background-color: #7bcff3;
+  margin: -300px auto;
+  padding: 4rem 1rem 2rem;
+  border: 1px solid #888;
+  width: calc(100% - 4rem);
+  max-width: 768px;
+  opacity: 0;
+  -webkit-transition: all 0.1s ease-in-out;
+  -o-transition: all 0.1s ease-in-out;
+  transition: all 0.1s ease-in-out;
+}
+.modal-content.modal-content-show {
+  margin: 5% auto;
+  opacity: 1;
+}
+.tennis_image {
+  max-width: 100%;
+  margin: 0 0 2.5rem;
+}
+.teniis_action {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+.close {
+  color: var(--white);
+  font-size: 2.5rem;
+  line-height: 2.5rem;
+  position: absolute;
+  right: 1rem;
+  top: 1rem;
+}
+.close:hover,
+.close:focus {
+  color: var(--primary-dark);
+  text-decoration: none;
+  cursor: pointer;
+}
+@media screen and (max-width: 1280px) {
+  main {
+    padding: 140px 0 0;
+  }
+  .title-h2 {
+    font-size: 2rem;
+    line-height: 2.5rem;
+  }
+  .container {
+    width: calc(100% - 2rem);
+  }
+}
+@media screen and (max-width: 768px) {
+  main {
+    padding: 86px 0 0;
+  }
+  .m-b8 {
+    margin: 0 0 2rem;
+  }
+  .btn-medium {
+    line-height: 1.25rem;
+    font-size: 1.5rem;
+    padding: 0.75rem 2rem;
+    border-radius: 2rem;
+  }
+}
