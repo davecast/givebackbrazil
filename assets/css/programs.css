@@ -71,12 +71,12 @@
   line-height: 2rem;
   font-weight: 600;
   font-style: italic;
-  color: var(--primary-dark);
+  color: var(--primary);
 }
 .program_text {
   font-weight: normal;
   font-style: italic;
-  color: var(--primary-dark);
+  color: var(--primary);
 }
 
 .program_bottom {
@@ -89,7 +89,7 @@
   flex-direction: column;
 }
 .program_slide {
-  background-color: var(--primary-d);
+  background-color: var(--primary-light);
   -webkit-box-shadow: inset 3px 7px 12px 5px rgba(0, 0, 0, 0.1);
   box-shadow: inset 3px 7px 12px 5px rgba(0, 0, 0, 0.1);
   width: calc(calc(calc(100% - 980px) / 2) + 980px);
@@ -140,7 +140,7 @@
 
 .program_slide_image {
   max-width: 100%;
-  border: 1rem solid var(--primary-dark-c);
+  border: 1rem solid var(--primary-dark-b);
   border-radius: 100%;
 }
 

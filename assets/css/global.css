@@ -45,9 +45,10 @@
 
 :root {
   --primary: #008b34;
+  --primary-light: #b6ffd1;
   --primary-dark: #00230d;
-  --primary-dark-b: #004800;
-  --primary-dark-c: #007eb6;
+  --primary-dark-b: #009136;
+  --primary-dark-c: #004800;
   --primary-b: #0078ad;
   --primary-c: #07c8f9;
   --primary-d: #c9ecff;
@@ -168,7 +169,7 @@ main {
   text-align: center;
 }
 .t-primary {
-  color: var(--primary);
+  color: var(--primary) !important;
 }
 .title {
   text-transform: uppercase;
@@ -205,7 +206,7 @@ main {
 .video_box {
   width: 100%;
   padding-top: 56.25%;
-  border: 12px solid #009fe5;
+  border: 12px solid var(--primary);
   border-radius: 45px;
   position: relative;
   overflow: hidden;

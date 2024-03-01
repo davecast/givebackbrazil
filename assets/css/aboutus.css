@@ -10,16 +10,18 @@
 }
 .story_wrapper {
   max-width: 980px;
-  margin: 0 auto;
+  margin: 0 auto 5rem;
   padding: 3rem 5rem;
   border-radius: 4rem;
   -webkit-box-shadow: inset 0px 0px 8px 10px rgba(0, 0, 0, 0.11);
   box-shadow: inset 0px 0px 8px 10px rgba(0, 0, 0, 0.11);
+  background-color: var(--primary-light);
 }
 .story_title {
   margin: 0 0 2.5rem;
   font-size: 4rem;
   line-height: 4rem;
+  color: var(--primary-dark-c);
 }
 .story_text {
   text-align: center;
@@ -35,7 +37,7 @@
   line-height: 2rem;
   font-weight: 600;
   font-style: italic;
-  color: var(--primary-dark);
+  color: var(--primary-dark-c);
 }
 .story_comment_last {
   text-align: center;
@@ -64,7 +66,7 @@
   padding-top: 2.5rem;
 }
 .team {
-  background-color: var(--primary-c);
+  background-color: var(--primary-dark-b);
   max-width: 55%;
   width: 100%;
   height: 310px;
@@ -178,32 +180,50 @@
 /*
 * DIRECTORS
 */
+.directors_title {
+  margin: 0 0 5rem;
+}
 .directors {
   padding: 4.5rem 0;
 }
 .directors_wrapper {
-  max-width: 580px;
+  max-width: 768px;
   margin: 0 auto;
 }
 .director {
   background-color: var(--primary);
   margin: 0 0 2rem;
-  border: 4px solid var(--primary-d);
-  -webkit-box-shadow: 0px 0px 12px 5px rgba(0, 0, 0, 0.11);
-  box-shadow: 0px 0px 12px 5px rgba(0, 0, 0, 0.11);
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-rows: 1fr;
-  -ms-grid-columns: 190px 1rem 1fr;
-  grid-template: 1fr / 190px 1fr;
-  gap: 1rem;
-  padding: 10px 2rem 10px 10px;
-  border-radius: 64px;
+  -webkit-box-shadow: inset 0px 0px 8px 10px rgba(0, 0, 0, 0.11);
+  box-shadow: inset 0px 0px 8px 10px rgba(0, 0, 0, 0.11);
+  padding: 2rem 2rem 2rem 10rem;
+  border-radius: 120px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 0 4rem;
+}
+.director_right {
+  padding: 2rem 10rem 2rem 2rem;
+}
+.director_right .director_image {
+  right: 0;
+  left: auto;
 }
 .director_image {
+  position: absolute;
+  font-size: 0;
+  clear: both;
+  max-width: 175px;
+  left: 0;
 }
 .director_image img {
+  overflow: hidden;
+  border-radius: 100%;
   max-width: 100%;
+  background-color: #d7d8da;
+  border: 8px solid var(--primary-dark-c);
 }
 .director_meta {
   display: -webkit-box;
@@ -213,22 +233,27 @@
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
-  -webkit-box-align: end;
-  -ms-flex-align: end;
-  align-items: flex-end;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
 }
 .director_name {
-  font-size: 2.5rem;
-  line-height: 2.5rem;
+  font-size: 4rem;
+  line-height: 3rem;
   font-weight: bold;
   font-style: italic;
   color: var(--white);
-  margin: 0 0 0.5rem;
+  margin: 0 0 0.875rem;
   text-transform: uppercase;
   text-align: right;
+  text-shadow: 5px 5px 7px rgba(0, 0, 0, 0.4);
+}
+.director_name-small {
+  font-size: 2.8rem;
+  line-height: 2.8rem;
 }
 .director_description {
   font-size: 0.75rem;
@@ -240,54 +265,13 @@
   text-align: right;
 }
 .director_position {
-  font-size: 1.25rem;
-  line-height: 1.25rem;
-  font-weight: normal;
+  font-size: 2rem;
+  line-height: 2rem;
+  font-weight: 300;
   font-style: italic;
   color: var(--white);
   text-align: right;
-}
-
-/*
-* ADVISORS
-*/
-.advisors {
-  padding: 2.5rem 0 4.5rem;
-}
-.advisors_wrapper {
-  max-width: 980px;
-  margin: 0 auto;
-  padding: 3rem 5rem;
-  border-radius: 4rem;
-  -webkit-box-shadow: inset 0px 0px 8px 10px rgba(0, 0, 0, 0.11);
-  box-shadow: inset 0px 0px 8px 10px rgba(0, 0, 0, 0.11);
-  background-color: var(--primary-d);
-}
-.advisor {
-  background-color: var(--white);
-  margin: 0 0 2rem;
-  border: 4px solid var(--primary-c);
-  -webkit-box-shadow: 0px 0px 12px 5px rgba(0, 0, 0, 0.11);
-  box-shadow: 0px 0px 12px 5px rgba(0, 0, 0, 0.11);
-  padding: 5rem;
-  border-radius: 64px;
-  text-align: center;
-}
-.advisor_name {
-  font-size: 2.5rem;
-  line-height: 2.5rem;
-  font-weight: bold;
-  font-style: italic;
-  color: var(--primary);
-  margin: 0 0 0.5rem;
   text-transform: uppercase;
-}
-.advisor_position {
-  font-size: 1.25rem;
-  line-height: 1.25rem;
-  font-weight: normal;
-  font-style: italic;
-  color: var(--primary);
 }
 
 @media screen and (max-width: 1280px) {
@@ -311,18 +295,9 @@
     font-size: 2.5rem;
     line-height: 2.5rem;
   }
-  .story_wrapper,
-  .advisors_wrapper {
+  .story_wrapper {
     padding: 2rem 2.5rem;
     border-radius: 2.5rem;
-  }
-  .advisor {
-    padding: 2.5rem;
-    border-radius: 32px;
-  }
-  .advisor_name {
-    font-size: 2rem;
-    line-height: 2rem;
   }
   .story_text,
   .story_comment,

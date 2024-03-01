@@ -13,13 +13,14 @@
   border-radius: 8rem;
   -webkit-box-shadow: inset 3px 7px 12px 5px rgba(0, 0, 0, 0.11);
   box-shadow: inset 3px 7px 12px 5px rgba(0, 0, 0, 0.11);
-  background-color: var(--primary-d);
   text-align: center;
   margin: 0 0 2.5rem;
+  background-color: var(--primary-light);
 }
 .statement_title {
-  font-size: 3.5rem;
+  font-size: 3rem;
   margin: 0 0 0.5rem;
+  color: var(--primary);
 }
 .statement_text {
   font-size: 1.25rem;
@@ -59,7 +60,7 @@
   line-height: 1.25rem;
   font-weight: bold;
   font-style: italic;
-  color: var(--primary-dark);
+  color: var(--primary);
   text-transform: uppercase;
   margin: 0 0 0.75rem;
 }
@@ -85,12 +86,13 @@
   border-radius: 4rem;
   -webkit-box-shadow: inset 0px 0px 8px 10px rgba(0, 0, 0, 0.11);
   box-shadow: inset 0px 0px 8px 10px rgba(0, 0, 0, 0.11);
-  background-color: var(--primary-d);
+  background-color: var(--primary-light);
 }
 .our_approash_title {
   margin: 0 0 2.5rem;
   font-size: 4rem;
   line-height: 4rem;
+  color: var(--primary-dark-c);
 }
 
 .our_approash_text {

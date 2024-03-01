@@ -13,40 +13,17 @@
 
   <body>
     <div id="mobileMenuOverlay" class="mobile_menu_overlay"></div>
-    <!-- <div id="popup" class="modal">
-      <div id="popupCotent" class="modal-content">
-        <span id="popupClose" class="close">&times;</span>
-        <div>
-          <img
-            class="tennis_image"
-            src="./assets/images/tennis_image.jpeg"
-            alt="Give back tennis"
-          />
-          <div class="teniis_action">
-            <a
-              href="https://crm.bloomerang.co/HostedDonation?ApiKey=pub_51af8fc9-e8d1-11eb-9331-02bc695e0cd7&WidgetId=532480"
-              target="_blank"
-              class="btn btn-blue btn-medium"
-            >
-              Register Here
-            </a>
-          </div>
-        </div>
-      </div>
-    </div> -->
-    <!-- <div class="popup">
-      <div class="popup_image">
-        <img src="./assets/images/tennis_image.jpeg" alt="Give back tennis" />
-      </div>
-      <script
-        src="https://s3-us-west-2.amazonaws.com/bloomerang-public-cdn/givebackcommunity/.widget-js/532480.js"
-        type="text/javascript"
-      ></script>
-    </div> -->
+
     <header class="header">
       <div class="header_container">
-        <figure class="logo">
-          <img src="./assets/images/logo.png" alt="Giveback Community" />
+        <figure class="logo logo_desktop">
+          <img src="./assets/images/logo.png" alt="Giveback Community Brazil" />
+        </figure>
+        <figure class="logo logo_mobile">
+          <img
+            src="./assets/images/logo_mobile.png"
+            alt="Giveback Community Brazil"
+          />
         </figure>
         <ul id="menu" class="menu">
           <li>
@@ -62,10 +39,36 @@
             <a href="./purpose.html">Purpose</a>
           </li>
           <li>
-            <a href="./blog.html">Blog</a>
-          </li>
-          <li>
             <a href="./contactus.html">Contact Us</a>
+          </li>
+          <li class="menu_page">
+            <div class="menu_page_text">
+              Clique na bandeira <br />
+              para visitar a página
+            </div>
+            <div class="menu_page_links">
+              <a href="#">
+                <img
+                  class="banner_page_arrow"
+                  src="./assets/images/links_eeuu.png"
+                  alt="Givebackcommunity page link"
+                />
+              </a>
+              <a href="#">
+                <img
+                  class="banner_page_arrow"
+                  src="./assets/images/links_eeuu.png"
+                  alt="Givebackcommunity page link"
+                />
+              </a>
+              <a href="#">
+                <img
+                  class="banner_page_arrow"
+                  src="./assets/images/links_eeuu.png"
+                  alt="Givebackcommunity page link"
+                />
+              </a>
+            </div>
           </li>
         </ul>
         <div class="action">
@@ -89,22 +92,27 @@
     </header>
     <main>
       <section class="banner_home">
-        <!-- <div class="banner_home_tennis">
-          <a id="popupAction" href="#" class="btn btn-blue btn-medium">
-            Give Back Tennis
-            <img src="./assets/images/tennis-ball.png" alt="Give Back Tennis" />
-          </a>
-        </div> -->
-        <!-- <img
-          class="banner_home_decoration-left"
-          src="./assets/images/palm_one.png"
-          alt=""
-        />
-        <img
-          class="banner_home_decoration-right"
-          src="./assets/images/palm_two.png"
-          alt=""
-        /> -->
+        <div class="banner_page_links">
+          <img
+            class="banner_page_arrow"
+            src="./assets/images/arrow_links.svg"
+            alt="Clique na bandeira para visitar a página"
+          />
+          <p class="banner_page_text">
+            Clique na bandeira <br />
+            para visitar a página
+          </p>
+
+          <div class="banner_page_flags">
+            <a href="#">
+              <img
+                class="banner_page_arrow"
+                src="./assets/images/links_eeuu.png"
+                alt="Givebackcommunity page link"
+              />
+            </a>
+          </div>
+        </div>
         <div class="container">
           <div class="banner_home_wrapper">
             <div class="banner_home_image-top">
@@ -123,121 +131,29 @@
               <a href="#" class="btn btn-yellow btn-medium btn-shadow">
                 fazer um donativo
               </a>
-              <a
-                href="https://givebackcommunity.org/gbc-game-day-sign-up-form/"
-                class="btn btn-blue btn-medium banner_home_action_volunteer"
-                >Sing Up as a Volunteer</a
-              >
             </div>
-
-            <!-- <div class="banner_home_image-bottom">
-              <img
-                src="./assets/images/banner_home_two.png"
-                alt="Spread the power of generosity"
-              />
-            </div> -->
           </div>
+        </div>
+        <div class="banner_home_image_bottom">
+          <img
+            src="./assets/images/banner_home_one_top.jpg"
+            alt="Spread the power of generosity"
+          />
+        </div>
+        <div class="banner_home_image_bottom_mobile">
+          <img
+            src="./assets/images/banner_home_one_bottom_mobile.jpg"
+            alt="Spread the power of generosity"
+          />
+        </div>
+        <div class="banner_home_action_bottom">
+          <a
+            href="https://givebackcommunity.org/gbc-game-day-sign-up-form/"
+            class="btn btn-blue btn-medium banner_home_action_volunteer"
+            >Sing Up as a Volunteer</a
+          >
         </div>
       </section>
-      <!-- <div class="separator separator-shadow"></div> -->
-      <!-- <section class="brands">
-        <div class="container">
-          <h2 class="title title-h2 t-blue t-center m-b8">
-            BRANDS THAT <strong>believe in our purpose</strong>
-          </h2>
-          <div class="brands_wrapper">
-            <div
-              id="splideHome"
-              class="splide"
-              aria-label="Splide Basic HTML Example"
-            >
-              <div class="splide__arrows">
-                <button class="splide__arrow splide__arrow--prev">
-                  <img
-                    src="./assets/images/arrow_slide_left.svg"
-                    alt="Arrow left"
-                  />
-                </button>
-                <button class="splide__arrow splide__arrow--next">
-                  <img
-                    src="./assets/images/arrow_slide_right.svg"
-                    alt="Arrow right"
-                  />
-                </button>
-              </div>
-
-              <div class="splide__track">
-                <ul class="splide__list">
-                  <li class="splide__slide">
-                    <img
-                      class="brand_image"
-                      src="./assets/images/brands_one_chickfila.png"
-                      alt="Chick fil a"
-                    />
-                  </li>
-                  <li class="splide__slide">
-                    <img
-                      class="brand_image"
-                      src="./assets/images/brands_two_tree_of_life.png"
-                      alt="Tree of life"
-                    />
-                  </li>
-                  <li class="splide__slide">
-                    <img
-                      class="brand_image"
-                      src="./assets/images/brands_three_bolay.png"
-                      alt="Bolay"
-                    />
-                  </li>
-                  <li class="splide__slide">
-                    <img
-                      class="brand_image"
-                      src="./assets/images/brands_four_five_guys.png"
-                      alt="Five Guys"
-                    />
-                  </li>
-                  <li class="splide__slide">
-                    <img
-                      class="brand_image"
-                      src="./assets/images/brands_five_sno.png"
-                      alt="SNO"
-                    />
-                  </li>
-                  <li class="splide__slide">
-                    <img
-                      class="brand_image"
-                      src="./assets/images/brands_six_west_palm_beach.png"
-                      alt="West Palm Beach"
-                    />
-                  </li>
-                  <li class="splide__slide">
-                    <img
-                      class="brand_image"
-                      src="./assets/images/brands_seven_minteco.png"
-                      alt="Minteco"
-                    />
-                  </li>
-                  <li class="splide__slide">
-                    <img
-                      class="brand_image"
-                      src="./assets/images/brands_eight_palm_beach_Atlantic.png"
-                      alt="Palm beach atlantic"
-                    />
-                  </li>
-                  <li class="splide__slide">
-                    <img
-                      class="brand_image"
-                      src="./assets/images/brands_nine_grandview.png"
-                      alt="Grandview"
-                    />
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section> -->
-      <!-- <div class="separator separator-shadow"></div> -->
       <section class="problems_deal">
         <div class="container">
           <h2 class="title title-h2 t-primary t-center m-b7">
@@ -251,7 +167,9 @@
                 alt="High generosity people are more likely to be satisfied with
               their lives overall"
               />
-              <div class="problem_number">2 MIL PESSOAS</div>
+              <div class="problem_number">
+                <span class="problem_number_value">2</span> MIL PESSOAS
+              </div>
               <p class="problem_description">sem-teto alimentadas por mês</p>
             </div>
             <div class="problem">
@@ -261,7 +179,9 @@
                 alt="High generosity people are more likely to be satisfied with
               their lives overall"
               />
-              <div class="problem_number">2 CIDADES</div>
+              <div class="problem_number">
+                <span class="problem_number_value">2</span> CIDADES
+              </div>
               <p class="problem_description">Rio de Janeiro E São Paulo</p>
             </div>
             <div class="problem">
@@ -271,7 +191,9 @@
                 alt="High generosity people are more likely to be satisfied with
               their lives overall"
               />
-              <div class="problem_number">50 CRIANÇAS</div>
+              <div class="problem_number">
+                <span class="problem_number_value">50</span> CRIANÇAS
+              </div>
               <p class="problem_description">
                 Recebendo educação diariamente através da nossa Escola Give Back
                 no Rio de Janeiro
@@ -284,7 +206,9 @@
                 alt="High generosity people are more likely to be satisfied with
               their lives overall"
               />
-              <div class="problem_number">5 PROFESSORES</div>
+              <div class="problem_number">
+                <span class="problem_number_value">5</span> PROFESSORES
+              </div>
               <p class="problem_description">ensinar as crianças da escola</p>
             </div>
           </div>
@@ -390,9 +314,19 @@
             src="./assets/images/mission_image_desktop.png"
             alt="A NOSSA MISSÃO"
           />
+          <img
+            class="mission_image_tablet"
+            src="./assets/images/mission_image_mobile.png"
+            alt="A NOSSA MISSÃO"
+          />
+        </div>
+        <div class="mission_image_mobile">
+          <img
+            src="./assets/images/mission_image_mobile.png"
+            alt="A NOSSA MISSÃO"
+          />
         </div>
       </section>
-      <div class="separator separator-shadow separator-shadow-both"></div>
     </main>
 
     <footer class="footer">
