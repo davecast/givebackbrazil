@@ -85,26 +85,11 @@
   transform: scale(1.05);
 }
 .banner_home_action_bottom {
-  padding: 3rem 0;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-/*
-* BRANDS
-*/
-.brands {
-  padding: 2.75rem 0;
-  background-color: var(--white-b);
-}
-.brands_wrapper {
-  max-width: 860px;
-  margin: 0 auto;
-}
 
-.brand_image {
-  max-height: 150px;
-}
 /*
 * IMPACT
 */
@@ -248,91 +233,7 @@
   font-style: italic;
   color: var(--primary);
 }
-/*
-* VIDEO EXPLANATION
-*/
-.video_explanation {
-  padding: 3.75rem 0 7.5rem;
-  background-color: var(--white);
-  position: relative;
-}
-.video_explanation_wrapper {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-rows: 1fr;
-  -ms-grid-columns: 0.35fr 2rem 0.65fr;
-  grid-template: 1fr / 0.35fr 0.65fr;
-  gap: 2rem;
-  max-width: 870px;
-  margin: 0 auto;
-}
-.video_explanation_left {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-.video_explanation_right {
-  position: relative;
-}
-.video_right_image {
-  position: absolute;
-  left: -40px;
-  bottom: -40px;
-  z-index: 4;
-  width: 110px;
-}
-.video_right_video {
-  padding-top: 56.25%;
-  border: 12px solid #009fe5;
-  border-radius: 45px;
-  position: relative;
-  overflow: hidden;
-  -webkit-box-shadow: 3px 7px 12px 5px rgba(0, 0, 0, 0.11);
-  box-shadow: 3px 7px 12px 5px rgba(0, 0, 0, 0.11);
-}
-.video_right_video iframe {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-}
-.video_verse {
-  position: absolute;
-  z-index: 10;
-  background-color: var(--primary);
-  max-width: 800px;
-  border-radius: 140px;
-  left: 0;
-  right: 0;
-  margin: 0 auto;
-  padding: 1.5rem 3rem;
-  -webkit-box-shadow: 3px 7px 12px 5px rgba(0, 0, 0, 0.11);
-  box-shadow: 3px 7px 12px 5px rgba(0, 0, 0, 0.11);
-  bottom: -70px;
-}
-.video_verse_text {
-  font-size: 1rem;
-  line-height: 1.25rem;
-  font-style: italic;
-  font-weight: 300;
-  color: var(--white);
-  margin: 0 0 0.75rem;
-}
-.video_verse_text strong {
-  font-weight: 600;
-}
-.video_verse_number {
-  font-size: 1.25rem;
-  line-height: 1.25rem;
-  font-weight: bold;
-  font-style: italic;
-  color: var(--white);
-  text-align: center;
-}
+
 /*
 * MISSION
 */
@@ -410,6 +311,9 @@
 }
 
 @media screen and (max-width: 1280px) {
+  .banner_home_action_bottom {
+    padding: 3rem 0;
+  }
   .mission_image_tablet {
     display: block;
     max-width: 100%;
